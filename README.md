@@ -2,7 +2,7 @@
 
 ## Overview
 This project is a Python-based password‑cracking tool that generates custom rainbow tables and attempts to recover passwords using MD5 hashing.  
-The program builds wordlists from social‑engineered data, expands them into combinatoric password candidates, filters them based on each person’s password rules, and compares each attempt against a target MD5 hash.
+The program builds wordlists from social‑engineered data, expands them into multiple password candidates, filters them based on each person’s password rules, and compares each attempt against a target MD5 hash.
 
 This project demonstrates:
 - MD5 hashing
@@ -15,13 +15,13 @@ This project demonstrates:
 
 ## Features
 
-### 🔍 **Wordlist Processing**
+### Wordlist Processing
 - Reads text files containing social‑engineered information  
 - Splits on colons, commas, and whitespace  
 - Normalizes or preserves case depending on user profile  
 - Builds a unique sorted set of usable words  
 
-### 🔑 **Rainbow Table Generation**
+### Rainbow Table Generation
 Generates thousands of password combinations by:
 - Combining 1–6 words
 - Enforcing character length rules
@@ -72,9 +72,10 @@ process_file("bob.txt", True)
 ```
 ### 2. Run the cracker
 Bob:
-
+```python
 hash_finderB(bob_hash)
-
+```
 Dr. Pearson:
-
+```python
 hash_finderD(dr_pearson_hash)
+```
