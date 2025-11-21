@@ -57,12 +57,18 @@ Stops early if a match is found.
 
 ## File Structure
 Password-Cracker/
-│── main.py
-│── bob.txt # Social‑engineered source words for Bob
-│── dr_pearson.txt # Social‑engineered source words for Dr. Pearson
-│── bobs_rainbow_table.txt # Generated attempts
-│── dr_pearsons_rainbow_table.txt
-│── README.md
+
+-main.py
+
+-bob.txt # Social‑engineered source words for Bob
+
+-dr_pearson.txt # Social‑engineered source words for Dr. Pearson
+
+-bobs_rainbow_table.txt # Generated attempts for Bob
+
+-dr_pearsons_rainbow_table.txt # Generated attempts for Dr. Pearson
+
+-README.md
 
 ## How It Works
 
