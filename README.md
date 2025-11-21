@@ -13,8 +13,6 @@ This project demonstrates:
 - File I/O for large wordlist and log generation
 - Defensive security analysis (salting, slow hashing, rate limiting)
 
----
-
 ## Features
 
 ### 🔍 **Wordlist Processing**
@@ -34,15 +32,15 @@ All attempts are logged to:
 - `bobs_rainbow_table.txt`
 - `dr_pearsons_rainbow_table.txt`
 
-### **Password Requirements**
+### Password Requirements
 
-#### **Bob**
+#### Bob
 - 5–10 characters  
 - Alphanumeric only  
 - No symbols  
 - No uppercase requirement  
 
-#### **Dr. Pearson**
+#### Dr. Pearson
 - 12–18 characters  
 - Alphanumeric only  
 - Must include:
@@ -50,14 +48,12 @@ All attempts are logged to:
   - At least one uppercase letter  
   - At least one lowercase letter  
 
-### **Hash Matching**
+### Hash Matching
 Uses Python’s `hashlib.md5()` to compare each generated password against:
 - `bob_hash`
 - `dr_pearson_hash`
 
 Stops early if a match is found.
-
----
 
 ## File Structure
 Password-Cracker/
@@ -68,10 +64,17 @@ Password-Cracker/
 │── dr_pearsons_rainbow_table.txt
 │── README.md
 
----
-
 ## How It Works
 
 ### 1. Process Wordlist
 ```python
 process_file("bob.txt", True)
+```
+### 2. Run the cracker
+Bob:
+
+hash_finderB(bob_hash)
+
+Dr. Pearson:
+
+hash_finderD(dr_pearson_hash)
